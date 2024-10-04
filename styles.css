@@ -30,7 +30,7 @@ a {
 .left-side {
   box-sizing: border-box;
   /* padding: top right bottom left */
-  padding: 100px 150px 100px 100px;
+  padding: 100px 150px 100px 80px;
   width: 50%;
   position: fixed;
   height: 100%;
@@ -46,7 +46,7 @@ a {
 
   box-sizing: border-box;
   /* padding: top right bottom left */
-  padding: 100px 100px 100px 25px;
+  padding: 100px 80px 100px 0px;
   justify-self: center;
   align-self: center;
 }
@@ -79,6 +79,7 @@ ul.horizontal-list li a svg:hover {
 }
 p {
   color: rgba(255, 255, 255, 0.7);
+  line-height: 25px;
 }
 p strong {
   color: rgba(255, 255, 255, 1);
@@ -132,9 +133,20 @@ p strong a:hover {
   flex-direction: column;
   height: 100%;
 }
+.sticker {
+  margin-bottom: 15px;
+  border-radius: 5px;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  transition: 0.5s ease;
+}
+.sticker:hover {
+  background-color: rgba(56, 105, 129, 0.2);
+}
 
 .section {
-  margin: 0px 0px 100px 0px;
+  margin: 0px 0px 75px 0px;
   display: flex;
   flex-direction: column;
 }
@@ -147,9 +159,9 @@ p strong a:hover {
     padding: 25px 50px 100px 50px;
     width: 100%;
     margin-left: 0%;
-    height: 50%;
     overflow-y: visible;
     box-sizing: border-box;
+    height: auto;
   }
   .left-side {
     position: relative;
