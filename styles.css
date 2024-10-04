@@ -176,4 +176,9 @@ p strong a:hover {
     display: none;
     height: 0;
   }
+  svg {
+    padding-top: 40px;
+    width: 40px;
+    height: 40px;
+  }
 }
