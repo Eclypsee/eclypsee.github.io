@@ -150,6 +150,7 @@ p strong a:hover {
 .sticker-left {
   margin-right: 10px;
   max-width: 150px;
+  min-width: 150px;
 }
 .sticker-left-img {
   width: 100%;
@@ -206,5 +207,13 @@ ul.tags li {
     padding-top: 40px;
     width: 40px;
     height: 40px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .sticker-left {
+    display: none;
+    height: none;
+    width: none;
   }
 }
